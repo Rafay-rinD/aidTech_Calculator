@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #edf1f4;
+}
+.container{
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
+}
+.container .buttons{
+    position: relative;
+    display: grid;
+}
+.container .buttons #value{
+    position: relative;
+    grid-column: span 4;
+    color: white;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #5166d6;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 20px #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.container .buttons span{
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 20px #fff;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.container .buttons #clear{
+    grid-column: span 2;
+    color: white;
+    background: #ff0000;
+    border: 2px solid #edf1f4;
+}
+
+.container .buttons span:active{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 20px #fff;
+}
+.container .buttons #plus{
+    grid-row: span 2;
+    color: white;
+    background: #23a518;
+    border: 2px solid #edf1f4;
+}
+.container .buttons #equal{
+    grid-row: span 2;
+    color: white;
+    background: #00aeff;
+    border: 2px solid #edf1f4;
+}
